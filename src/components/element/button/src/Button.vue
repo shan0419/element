@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button class="el-button">
     <span v-if="$slots.default">
       <slot></slot>
     </span>    
@@ -9,5 +9,8 @@
 <script>
 export default {
   name: 'ElButton',
+  props: {
+    type: String,
+  }
 }
 </script>
