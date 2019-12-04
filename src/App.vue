@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-button>xx</el-button>
+    <el-button>button 按钮</el-button>
   </div>
 </template>
 
