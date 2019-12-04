@@ -9,8 +9,5 @@
 <script>
 export default {
   name: 'ElButton',
-  props: {
-    type: String,
-  }
 }
 </script>
