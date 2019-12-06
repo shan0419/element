@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-button>button 按钮</el-button>
+    <el-button>默认按钮</el-button>
   </div>
 </template>
 

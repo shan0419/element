@@ -1,13 +1,11 @@
 <template>
   <button class="el-button">
-    <span v-if="$slots.default">
-      <slot></slot>
-    </span>    
+    <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
   name: 'ElButton',
-}
+};
 </script>
