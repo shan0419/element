@@ -56,7 +56,7 @@ $--font-size-medium: 16px !default; // 小标题
 $--font-size-base: 14px !default; // 正文
 $--font-size-small: 13px !default; // 正文（小）
 $--font-size-extra-small: 12px !default; // 正文（小）
-$--font-weight-primary: 500;
+$--font-weight-primary: 500; // 默认字体加粗
 
 /** Border
 ----------------------------*/
@@ -71,40 +71,40 @@ $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, .1) !default;
 
 /** Button
 -------------------------*/
+$--button-font-weight: $--font-weight-primary !default; // 500
+$--button-font-size: $--font-size-base !default; // 14px
+$--button-border-radius: $--border-radius-base !default; // 4px
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
 
-// 默认按钮背景颜色、边框颜色、字体颜色
+$--button-default-background-color: $--color-white !default; // #fff
+$--button-default-border-color: $--border-color-base !default; // #dcdfe6
+$--button-default-font-color: $--color-text-regular !default; // #606266
 
-// $--button-font-weight: $--font-weight-primary !default; // // 默认按钮字体加粗值
-// $--button-active-shade-percent: 10% !default; // 点击态颜色混合百分比
-// $--button-hover-tint-percent: 20% !default; // hover 颜色混合百分比
-// $--button-padding-vertical: 12px !default; // 按钮 上下 padding
-// $--button-padding-horizontal: 20px !default; // 按钮 左右 padding
-// $--button-font-size: $--font-size-base !default; // 按钮字体大小
-// $--button-border-raduius: $--border-radius-base !default; // 按扭圆角大小
+$--button-primary-background-color: $--color-primary !default; // #4093ff
+$--button-primary-border-color: $--color-primary !default; // #4093ff
+$--button-primary-font-color: $--color-white !default; // #fff 
 
-// $--button-default-background-color: $--color-white !default; // 默认按钮背景颜色
-// $--button-default-border-color: $--border-color-base !default; // 默认按钮边框颜色
-// $--button-default-font-color: $--color-text-regular !default; // 默认按钮字体颜色
+$--button-success-background-color: $--color-success !default; // #67c23a
+$--button-success-border-color: $--color-success !default; // #67c23a
+$--button-success-font-color: $--color-white !default; // #fff
 
-// $--button-primary-background-color: $--color-primary !default; // 主要按钮背景颜色
-// $--button-primary-border-color: $--color-primary !default; // 主要按钮边框颜色
-// $--button-primary-font-color: $--color-white !default; // 主要按钮字体颜色
 
-// $--button-success-background-color: $--color-success !default; // 成功按钮背景颜色
-// $--button-success-border-color: $--color-success !default; // 成功按钮边框颜色
-// $--button-success-font-color: $--color-white !default; // 成功按钮字体颜色
+$--button-info-background-color: $--color-info !default; //  #909399
+$--button-info-border-color: $--color-info !default; //  #909399
+$--button-info-font-color: $--color-white !default; // #fff
 
-// $--button-warning-background-color: $--color-warning !default; // 警告按钮背景颜色
-// $--button-warning-border-color: $--color-warning !default; // 警告按钮边框颜色
-// $--button-warning-font-color: $--color-white !default; // 警告按钮字体颜色
+$--button-warning-background-color: $--color-warning !default; // e6a23c
+$--button-warning-border-color: $--color-warning !default; // e6a23c
+$--button-warning-font-color: $--color-white !default; // #fff
 
-// $--button-danger-background-color: $--color-danger !default; // 危险按钮背景颜色
-// $--button-danger-border-color: $--color-danger !default; // 危险按钮边框颜色
-// $--button-danger-font-color: $--color-white !default; // 危险按钮字体颜色
+$--button-danger-background-color: $--color-danger !default; // #f56c6c
+$--button-danger-border-color: $--color-danger !default; // #f56c6c
+$--button-danger-font-color: $--color-white !default; // #fff
 
-// $--button-info-background-color: $--color-info !default; // 信息按钮背景颜色
-// $--button-info-border-color: $--color-info !default; // 信息按钮边框颜色
-// $--button-info-font-color: $--color-white !default; // 信息按钮字体颜色
+$--button-hover-tint-percent: 20% !default;
+$--button-active-shade-percent: 10% !default;
+
 
 /* Break Point
 --------------------------*/
