@@ -20,6 +20,16 @@
   &.is-plain {
     @include button-plain($backgroundColor);
   }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:active {
+      color: $--color-white;
+      background-color: mix($--color-white, $backgroundColor);
+      border-color: mix($--color-white, $backgroundColor);
+    }
+  }
 }
 
 @mixin button-plain ($backgroundColor) {
@@ -37,5 +47,16 @@
     background-color: mix($--color-black, $backgroundColor, $--button-active-shade-percent);
     border-color: mix($--color-black, $backgroundColor, $--button-active-shade-percent);
     color: $--color-white;
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: mix($--color-white, $backgroundColor, 40%);
+      background-color: mix($--color-white, $backgroundColor, 90%);
+      border-color: mix($--color-white, $backgroundColor, 80%);
+    }
   }
 }
