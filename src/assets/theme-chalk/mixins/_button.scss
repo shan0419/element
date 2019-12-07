@@ -16,4 +16,26 @@
     border-color: mix($--color-black, $borderColor, $--button-active-shade-percent);
     color: $fontColor
   }
+
+  &.is-plain {
+    @include button-plain($backgroundColor);
+  }
+}
+
+@mixin button-plain ($backgroundColor) {
+  color: $backgroundColor;
+  background-color: mix($--color-white, $backgroundColor, 90%);
+  border-color: mix($--color-white, $backgroundColor, 60%);
+
+  &:hover {
+    background-color: $backgroundColor;
+    border-color: $backgroundColor;
+    color: $--color-white;
+  }
+
+  &:active {
+    background-color: mix($--color-black, $backgroundColor, $--button-active-shade-percent);
+    border-color: mix($--color-black, $backgroundColor, $--button-active-shade-percent);
+    color: $--color-white;
+  }
 }
