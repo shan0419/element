@@ -60,3 +60,13 @@
     }
   }
 }
+
+@mixin button-size ($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+
+  &.is-circle {
+    padding: $padding-vertical;
+  }
+}

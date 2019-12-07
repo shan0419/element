@@ -72,10 +72,25 @@ $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, .1) !default;
 /** Button
 -------------------------*/
 $--button-font-weight: $--font-weight-primary !default; // 500
-$--button-font-size: $--font-size-base !default; // 14px
-$--button-border-radius: $--border-radius-base !default; // 4px
 $--button-padding-vertical: 12px !default;
 $--button-padding-horizontal: 20px !default;
+$--button-font-size: $--font-size-base !default; // 14px
+$--button-border-radius: $--border-radius-base !default; // 4px
+
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 20px !default;
+$--button-medium-font-size: $--font-size-base !default;
+$--button-medium-border-radius: $--border-radius-base !default;
+
+$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-horizontal: 15px !default;
+$--button-small-font-size: $--font-size-extra-small !default;
+$--button-small-border-radius: #{$--border-radius-base - 1} !default;
+
+$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-horizontal: 15px !default;
+$--button-mini-font-size: $--font-size-extra-small !default;
+$--button-mini-border-radius: #{$--border-radius-base - 1} !default;
 
 $--button-default-background-color: $--color-white !default; // #fff
 $--button-default-border-color: $--border-color-base !default; // #dcdfe6
@@ -105,6 +120,8 @@ $--button-danger-font-color: $--color-white !default; // #fff
 $--button-disabled-background-color: $--color-white !default; // #fff
 $--button-disabled-border-color: $--border-color-lighter !default; // #ebeef5
 $--button-disabled-font-color: $--color-text-placeholder !default; // #c0c4cc
+
+
 
 $--button-hover-tint-percent: 20% !default;
 $--button-active-shade-percent: 10% !default;
