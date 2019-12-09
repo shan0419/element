@@ -77,7 +77,7 @@
       <el-button size="small" type="success" icon="el-icon-check" circle></el-button>
       <el-button size="mini" type="info" icon="el-icon-message" circle></el-button>
     </el-row> -->
-    <el-button-group>
+    <!-- <el-button-group>
       <el-button type="primary" icon="el-icon-arrow-left">上一页</el-button>
       <el-button type="primary">下一页<i class="el-icon-arrow-right el-icon--right"></i></el-button>
     </el-button-group>
@@ -94,7 +94,13 @@
     </el-button-group>
     <el-button-group>
       <el-button circle type="success" icon="el-icon-edit"></el-button>
-    </el-button-group>
+    </el-button-group> -->
+    <el-button autofocus type="primary" icon="el-icon-arrow-left">上一页</el-button>
+    <el-button native-type="submit" type="primary" icon="el-icon-arrow-left">上一页</el-button>
+    <el-button @click="handleClick" type="primary" icon="el-icon-arrow-left">上一页</el-button>
+
+
+
   </div>
 </template>
 
@@ -104,6 +110,11 @@ export default {
   name: 'app',
   components: {
   },
+  methods: {
+    handleClick () {
+      console.log('xxx');
+    }
+  }
 };
 </script>
 

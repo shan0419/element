@@ -5,13 +5,14 @@
   border-color: $borderColor;
   color: $fontColor;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: mix($--color-white, $backgroundColor, $--button-hover-tint-percent);
     border-color: mix($--color-white, $borderColor, $--button-hover-tint-percent);
     color: $fontColor
   }
 
-  &:focus {
+  &:active {
     background-color: mix($--color-black, $backgroundColor, $--button-active-shade-percent);
     border-color: mix($--color-black, $borderColor, $--button-active-shade-percent);
     color: $fontColor
@@ -24,6 +25,7 @@
   &.is-disabled {
     &,
     &:hover,
+    &:focus,
     &:active {
       color: $--color-white;
       background-color: mix($--color-white, $backgroundColor);
@@ -37,7 +39,8 @@
   background-color: mix($--color-white, $backgroundColor, 90%);
   border-color: mix($--color-white, $backgroundColor, 60%);
 
-  &:hover {
+  &:hover,
+  &:focus, {
     background-color: $backgroundColor;
     border-color: $backgroundColor;
     color: $--color-white;

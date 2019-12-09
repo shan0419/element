@@ -27,7 +27,8 @@
   }
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $--color-primary;
     border-color: $--color-primary-light-7;
     background-color: $--color-primary-light-9;
@@ -45,7 +46,8 @@
   }
 
   @include when(plain) {
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #fff;
       border-color: #4093ff;
       color: #409eff;
@@ -69,6 +71,7 @@
   @include when(disabled) {
     &,
     &:hover,
+    &:focus,
     &:active {
       cursor: not-allowed;
       background-color: $--button-disabled-background-color;
@@ -79,6 +82,7 @@
     &.is-plain {
       &,
       &:hover,
+      &:focus,
       &:active {
         background-color: $--button-disabled-background-color;
         border-color: $--button-disabled-border-color;
@@ -114,7 +118,8 @@
     padding-left: 0;
     padding-right: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: transparent;
       border-color: transparent;
       color: mix($--color-white, $--color-primary, $--button-hover-tint-percent);
@@ -125,7 +130,8 @@
     }
 
     &.is-disabled,
-    &.is-disabled:hover {
+    &.is-disabled:hover,
+    &.is-disabled:focus {
       border-color: transparent;
     }
   }
