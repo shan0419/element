@@ -97,10 +97,7 @@
     </el-button-group> -->
     <el-button autofocus type="primary" icon="el-icon-arrow-left">上一页</el-button>
     <el-button native-type="submit" type="primary" icon="el-icon-arrow-left">上一页</el-button>
-    <el-button @click="handleClick" type="primary" icon="el-icon-arrow-left">上一页</el-button>
-
-
-
+    <el-button @click="handleClick" :type="type">按钮</el-button>
   </div>
 </template>
 
@@ -108,11 +105,14 @@
 
 export default {
   name: 'app',
-  components: {
+  data () {
+    return {
+      type: 'primary'
+    }
   },
   methods: {
     handleClick () {
-      console.log('xxx');
+      // this.type = 'success';
     }
   }
 };

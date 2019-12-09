@@ -1,9 +1,9 @@
 <template>
   <button
-    class="el-button"
-    autofocus="autofocus"
+    :autofocus="autofocus"
     @click="e => $emit('click', e)"
     :type="nativeType"
+    class="el-button"
     :class="[
       type ? `el-button--${type}` : '',
       size ? `el-button--${size}` : '',
