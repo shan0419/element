@@ -130,15 +130,15 @@
     }
   }
 
-  @include m(medium) {
-    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
-  }
+  // @include m(medium) {
+  //   @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
+  // }
 
-  @include m(small) {
-    @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-medium-font-size, $--button-small-border-radius);
-  }
+  // @include m(small) {
+  //   @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-medium-font-size, $--button-small-border-radius);
+  // }
 
-  @include m(mini) {
-    @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-medium-font-size, $--button-mini-border-radius);
-  }
+  // @include m(mini) {
+  //   @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-medium-font-size, $--button-mini-border-radius);
+  // }
 }

@@ -1,0 +1,56 @@
+@import "./mixins/mixins.scss";
+@import "./common/var.scss";
+
+@include b(button-group) {
+  display: inline-block;
+
+  .el-button {
+    & + .el-button {
+      margin-left: 0;
+    }
+
+    /**设置border-radius*/
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    // 按钮组内只有一个元素
+    &:first-child:last-child {
+      border-radius: $--button-border-radius;
+
+      &.is-round {
+        border-radius: 20px;
+      }
+
+      &.is-circle {
+        border-radius: 50%;
+      }
+    }
+  
+
+    // 设置border
+    &:first-child {
+      border-right-color: rgba($--color-white, 0.5);
+    }
+    &:last-child {
+      border-left-color: rgba($--color-white, 0.5);
+    }
+    &:not(:first-child):not(:last-child) {
+      border-left-color: rgba($--color-white, 0.5);
+      border-right-color: rgba($--color-white, 0.5);
+    }
+
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+  }
+}
