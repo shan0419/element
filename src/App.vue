@@ -17,6 +17,14 @@
       <el-link type="danger" disabled>危险链接</el-link>
       <el-link type="info" disabled>信息链接</el-link>
     </div>
+    <div>
+      <el-link :underline="false">无下划线</el-link>
+      <el-link>有下划线</el-link>
+    </div>
+    <div>
+      <el-link icon="el-icon-edit">编辑</el-link>
+      <el-link>查看<i class="el-icon-view el-icon--right"></i> </el-link>
+    </div>
   </div>
 </template>
 

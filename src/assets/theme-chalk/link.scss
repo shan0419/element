@@ -9,6 +9,7 @@ $typeMap: (
 );
 
 @include b(link) {
+  position: relative;
   cursor: pointer;
   text-decoration: none;
   font-size: $--link-font-size;
@@ -19,9 +20,27 @@ $typeMap: (
     color: $--link-default-active-color;
   }
 
+  [class *= "el-icon-"] {
+    & + span {
+      margin-left: 5px;
+    }
+  }
+
   @include when(disabled) {
     cursor: not-allowed;
     color: $--link-disabled-font-color;
+  }
+
+  @include when(underline) {
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 1px solid $--link-default-active-color;
+    }
   }
 
   @each $type, $color in $typeMap {
@@ -34,6 +53,12 @@ $typeMap: (
 
       @include when(disabled) {
         color: mix($--color-white, $color);
+      }
+
+      @include when(underline) {
+        &:hover::after {
+          border-bottom-color: $color;
+        }
       }
     }
   }

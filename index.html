@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <el-link href="https://element.eleme.io" target="_blank">默认链接</el-link>
+      <el-link type="primary">主要链接</el-link>
+      <el-link type="success">成功链接</el-link>
+      <el-link type="warning">警告链接</el-link>
+      <el-link type="danger">危险链接</el-link>
+      <el-link type="info">信息链接</el-link>
+    </div>
+  </div>
+
+  <script>
+    const vm = new Vue({
+      el: '#app'
+    })
+  </script>
+</body>
+</html>
