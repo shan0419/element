@@ -8,7 +8,7 @@ import Aside from '@element/aside';
 import Icon from '@element/icon';
 import Button from '@element/button';
 import ButtonGroup from '@element/button-group';
-import Link from '@element/Link';
+import Link from '@element/link';
 
 const components = [
   Row,

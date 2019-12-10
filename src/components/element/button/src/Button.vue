@@ -39,8 +39,8 @@ export default {
     autofocus: Boolean,
     nativeType: {
       type: String,
-      default: 'button'
-    }
-  }
+      default: 'button',
+    },
+  },
 };
 </script>

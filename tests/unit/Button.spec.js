@@ -8,86 +8,86 @@ describe('Button.vue', () => {
   beforeEach(() => {
     wrapper = shallowMount(Button);
     buttonEle = wrapper.vm.$el;
-  })
+  });
 
   it('create', () => {
     expect(buttonEle.classList).toContain('el-button');
-  }),
+  });
 
   it('type', () => {
     wrapper.setProps({
-      type: 'primary'
-    })
+      type: 'primary',
+    });
     expect(buttonEle.classList).toContain('el-button--primary');
-  })
+  });
 
   it('plain', () => {
     wrapper.setProps({
-      plain: true
-    })
+      plain: true,
+    });
     expect(buttonEle.classList).toContain('is-plain');
-  })
+  });
 
   it('round', () => {
     wrapper.setProps({
-      round: true
-    })
+      round: true,
+    });
     expect(buttonEle.classList).toContain('is-round');
-  })
+  });
 
   it('circle', () => {
     wrapper.setProps({
-      circle: true
-    })
+      circle: true,
+    });
     expect(buttonEle.classList).toContain('is-circle');
-  })
+  });
 
   it('disabled', () => {
     wrapper.setProps({
-      disabled: true
-    })
+      disabled: true,
+    });
     expect(buttonEle.classList).toContain('is-disabled');
-  })
+  });
 
   it('icon', () => {
     wrapper.setProps({
-      icon: 'el-icon-edit'
+      icon: 'el-icon-edit',
     });
     expect(wrapper.html()).toContain('<i class="el-icon-edit"></i>');
-  })
+  });
 
   it('loading', () => {
     wrapper.setProps({
-      loading: true
-    })
+      loading: true,
+    });
     expect(wrapper.html()).toContain('<i class="el-icon-loading"></i>');
-  })
+  });
 
   it('size', () => {
     wrapper.setProps({
-      size: 'medium'
-    })
+      size: 'medium',
+    });
     expect(buttonEle.classList).toContain('el-button--medium');
-  })
+  });
 
   it('autoFocus', () => {
     wrapper.setProps({
-      autofocus: true
-    })
+      autofocus: true,
+    });
     expect(wrapper.attributes('autofocus')).toEqual('autofocus');
-  })
+  });
 
   it('nativeType', () => {
     wrapper.setProps({
-      nativeType: 'submit'
-    })
+      nativeType: 'submit',
+    });
     expect(wrapper.attributes('type')).toEqual('submit');
-  })
+  });
 
   it('emit click', () => {
     const buttonVm = wrapper.find(Button);
     wrapper.find('button').trigger('click');
     expect(buttonVm.emitted().click).toBeTruthy();
     expect(wrapper.emitted().click).toBeTruthy();
-  })
-})
+  });
+});
